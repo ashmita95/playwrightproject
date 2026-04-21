@@ -11,7 +11,6 @@ let page;
 let loginpage;
 let navmenu;
 let envData;
-
 test.describe('Add Deal', ()=>{
     test.beforeEach(async({})=>{
         browser = await chromium.launch({ headless: false})
