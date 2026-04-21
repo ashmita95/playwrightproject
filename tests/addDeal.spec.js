@@ -4,7 +4,6 @@ import { credentials } from '../testData/credentials';
 import { staticdata } from '../testData/staticdata';
 import { NavigationPage } from '../pages/navigationPage';
 import { DealPage } from '../pages/deal';
-
 let browser;
 let context;
 let page;
