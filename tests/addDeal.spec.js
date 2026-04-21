@@ -4,7 +4,6 @@ import { credentials } from '../testData/credentials';
 import { staticdata } from '../testData/staticdata';
 import { NavigationPage } from '../pages/navigationPage';
 import { DealPage } from '../pages/deal';
-
 let browser;
 let context;
 let page;
@@ -15,10 +14,8 @@ test.describe('Add Deal', ()=>{
     test.beforeEach(async({})=>{
         browser = await chromium.launch({ headless: false})
         context = await browser.newContext()
-        page = await context.newPage()
-            
-        loginpage = new LogInPage(page)
-                
+        page = await context.newPage()            
+        loginpage = new LogInPage(page)                
         const env = process.env.PLATFORM
         envData = credentials[env]
         const {firmname,accountUrl} = envData
