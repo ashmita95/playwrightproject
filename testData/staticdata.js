@@ -30,5 +30,5 @@ export const staticdata = {
     personDegree: 'MCA',
     personSchoolName: "Heritage",
     emailContent: 'Hello',
-    tagName: "UTF8"
+    //tagName: "UTF8"
   }
