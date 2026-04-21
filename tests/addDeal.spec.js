@@ -39,7 +39,6 @@ test.describe('Add Deal', ()=>{
         .toBeVisible({timeout:15000});
     })
     test.afterAll(async({},testInfo) =>{
-        //logout
         await loginpage.logout()
         await expect(page).toHaveURL(`${testInfo.project.use.baseURL}/session/new`);
     }) 
